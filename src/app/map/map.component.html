@@ -1,0 +1,10 @@
+<h1>Mapa</h1>
+<button (click)="clearMap()">Clear map markers</button>
+<button (click)="showMapMarkers()">Show map markers</button>
+<div id="map" class="map"></div>
+<div id="popup" class="ol-popup">
+  <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+  <div id="popup-content" *ngIf="displayPopup">
+    <app-popup-map-marker message="{{message}}"></app-popup-map-marker>
+  </div>
+</div>
